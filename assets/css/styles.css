@@ -245,15 +245,14 @@ p{margin:0}
 .card--wide{grid-column:span 2}
 .card--tall{grid-row:span 2}
 .card--feature{
-  grid-column:span 2;grid-row:span 2;color:var(--ink);background:linear-gradient(160deg,#e7f0fb,#f5f9fd);border-color:var(--line);
+  grid-column:span 2;grid-row:span 2;color:var(--ink);background:#e9f1fb;border-color:var(--line);
   display:flex;flex-direction:column;justify-content:flex-end;min-height:340px
 }
 .card--feature::before{content:"";position:absolute;inset:0;
   background-image:linear-gradient(rgba(11,59,96,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,59,96,.05) 1px,transparent 1px);
   background-size:40px 40px;opacity:.7}
-.card--feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:.1;mix-blend-mode:multiply}
-.card--feature::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(to top,#f4f8fd 32%,rgba(244,248,253,.6) 58%,rgba(244,248,253,0) 82%)}
+.card--feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0}
+.card--feature::after{display:none}
 .card--feature .in{position:relative;z-index:2}
 .card--feature .overline{color:var(--accent)}
 .card--feature p{color:var(--muted)}
