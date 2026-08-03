@@ -205,7 +205,7 @@ p{margin:0}
 .hero .stat span{color:var(--muted)}
 
 .emblem{position:relative;justify-self:center;width:min(100%,540px)}
-.emblem__frame{position:relative;overflow:hidden;border-radius:26px;background:#0A0F12;box-shadow:var(--shadow-lift);border:1px solid rgba(11,59,96,.12)}
+.emblem__frame{position:relative;overflow:hidden;border-radius:26px;background:transparent;box-shadow:var(--shadow-lift);border:1px solid var(--line)}
 .emblem__logo{width:100%;display:block;animation:floaty 7s ease-in-out infinite}
 .emblem__glow{position:absolute;inset:-14%;border-radius:38px;z-index:0;
   background:radial-gradient(closest-side,rgba(26,108,168,.35),transparent);filter:blur(30px)}
