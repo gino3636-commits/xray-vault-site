@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X-Ray Vault — Secure radiography, in your pocket</title>
+  <meta name="description" content="X-Ray Vault keeps studies, DICOM images and patient records encrypted on-device — review, measure and share from anywhere, safely." />
+  <link rel="icon" href="assets/img/brand-mark.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+  <header class="nav" data-testid="site-header">
+    <a class="brand" href="index.html" data-testid="brand-logo">
+      <span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span>
+      <span>X-Ray<b>Vault</b></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="support.html" data-testid="nav-cta">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" data-testid="nav-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" data-testid="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <span class="overline hero__eyebrow">Radiography, secured</span>
+        <h1>
+          <span class="ln"><span>The radiography</span></span>
+          <span class="ln"><span><span class="accent">vault</span> that goes</span></span>
+          <span class="ln"><span>wherever you do.</span></span>
+        </h1>
+        <p class="lede hero__sub">Studies, DICOM images and patient records — encrypted on-device. Review, window-level, measure and share from anywhere, without ever exposing raw data.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="support.html" data-testid="hero-cta-primary">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="features.html" data-testid="hero-cta-secondary">Explore features</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><b>256-bit</b><span>AES on-device</span></div>
+          <div class="stat"><b>DICOM</b><span>native viewer</span></div>
+          <div class="stat"><b>Offline</b><span>first by design</span></div>
+        </div>
+      </div>
+
+      <div class="emblem" data-testid="hero-emblem">
+        <span class="emblem__glow" aria-hidden="true"></span>
+        <div class="emblem__frame">
+          <span class="scanline" aria-hidden="true"></span>
+          <img class="emblem__logo" src="assets/img/splash-logo.png" alt="X-Ray Vault — secure radiography vault logo" />
+        </div>
+        <div class="chip chip--tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> End-to-end encrypted</div>
+        <div class="chip chip--br"><span class="dot"></span> Study synced</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Secure storage</span><span class="marquee__item">DICOM viewer</span><span class="marquee__item">Patient records</span><span class="marquee__item">Offline access</span><span class="marquee__item">Encrypted sharing</span><span class="marquee__item">Audit trail</span>
+      <span class="marquee__item">Secure storage</span><span class="marquee__item">DICOM viewer</span><span class="marquee__item">Patient records</span><span class="marquee__item">Offline access</span><span class="marquee__item">Encrypted sharing</span><span class="marquee__item">Audit trail</span>
+    </div>
+  </div>
+
+  <!-- FEATURES BENTO -->
+  <section class="section" id="security" data-testid="features">
+    <div class="wrap">
+      <div class="shead reveal">
+        <span class="overline">What's inside</span>
+        <h2>A complete imaging kit, sized for a phone.</h2>
+        <p class="lede">Everything a clinician needs between the scanner and the report — engineered so nothing sensitive ever leaves the device unprotected.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--feature reveal" data-testid="feature-encryption">
+          <img src="assets/img/mri-suite.jpg" alt="" aria-hidden="true" />
+          <div class="in">
+            <span class="overline">Zero-knowledge</span>
+            <h3>End-to-end encryption</h3>
+            <p>Every study is sealed with 256-bit AES on your device. Keys never touch our servers, so a read stays between you and the patient — always.</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-d="1" data-testid="feature-viewer">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+          <h3>DICOM & X-ray viewer</h3>
+          <p>Pan, zoom and window-level with native fidelity.</p>
+        </article>
+
+        <article class="card reveal" data-d="2" data-testid="feature-records">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="8" r="3.5"/><path d="M22 19v-1a4 4 0 0 0-3-3.87"/></svg></span>
+          <h3>Patient records</h3>
+          <p>Link studies to structured, searchable histories.</p>
+        </article>
+
+        <article class="card card--stat reveal" data-testid="feature-stat">
+          <b>AES-256</b>
+          <span>Military-grade encryption applied to every stored study, at rest and in transit.</span>
+        </article>
+
+        <article class="card reveal" data-d="1" data-testid="feature-offline">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4l20 20"/><path d="M5 12.5a10 10 0 0 1 4-2.4M12 5c3 0 5.8 1.2 7.8 3.1M8.5 15.8A5 5 0 0 1 12 14.5c1 0 2 .3 2.8.9"/><path d="M12 20h.01"/></svg></span>
+          <h3>Offline-first</h3>
+          <p>Read anywhere — dead zones, basements, in transit.</p>
+        </article>
+
+        <article class="card reveal" data-d="2" data-testid="feature-sharing">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span>
+          <h3>Encrypted sharing</h3>
+          <p>Send a study with an expiring, revocable link.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP PREVIEW ROW -->
+  <section class="section" style="padding-top:0" data-testid="preview">
+    <div class="wrap">
+      <div class="showrow reveal">
+        <div class="showrow__media">
+          <img src="assets/img/tablet-point.jpg" alt="Clinician reviewing an X-ray on a tablet" />
+          <span class="tag">Live viewer</span>
+        </div>
+        <div>
+          <span class="overline">Built for the read</span>
+          <h2>Clinical accuracy, thumb-friendly.</h2>
+          <p class="lede">Gesture-native controls put full window-level, zoom and measurement in reach — the way you'd expect on a diagnostic workstation, distilled to a single hand.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Pinch-zoom to true pixel density</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Draggable window/level presets</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Distance & angle measurement tools</li>
+          </ul>
+          <p style="margin-top:1.6rem"><a class="btn btn--dark" href="features.html">See all features <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="section manifesto" id="manifesto" data-testid="manifesto">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="overline">Our approach</span>
+        <h2>Four principles behind every screen.</h2>
+      </div>
+      <div class="chapters">
+        <div class="chapter reveal"><span class="chapter__no">01</span><h3>Portable</h3><p>The read shouldn't be chained to a workstation. Your vault travels with you, ready the moment you open the app.</p></div>
+        <div class="chapter reveal"><span class="chapter__no">02</span><h3>Private</h3><p>Studies never leave the device unencrypted. We designed the storage so that we couldn't read your data even if we tried.</p></div>
+        <div class="chapter reveal"><span class="chapter__no">03</span><h3>Precise</h3><p>Pan, zoom, window-level and measure with the fidelity clinicians expect — no lossy previews, no guesswork.</p></div>
+        <div class="chapter reveal"><span class="chapter__no">04</span><h3>Prepared</h3><p>Works with zero signal and syncs on your terms. Connectivity is a convenience, never a dependency.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS TEASER -->
+  <section class="section" data-testid="screens-teaser">
+    <div class="wrap">
+      <div class="shead reveal">
+        <span class="overline">A look inside</span>
+        <h2>Designed to disappear behind the image.</h2>
+        <p class="lede">A calm, clinical interface that keeps the scan front and centre — placeholder screens shown here.</p>
+      </div>
+      <div class="gallery">
+        <figure class="device reveal">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><img src="assets/img/screen-vault.jpg" alt="Vault list screen" /></div></div>
+          <figcaption class="device__cap"><b>Your Vault</b><span>Encrypted study library</span></figcaption>
+        </figure>
+        <figure class="device device--mid reveal" data-d="1">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><span class="scanline" aria-hidden="true"></span><img src="assets/img/screen-viewer.jpg" alt="Image viewer screen" /></div></div>
+          <figcaption class="device__cap"><b>Viewer</b><span>Window-level & measure</span></figcaption>
+        </figure>
+        <figure class="device reveal" data-d="2">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><img src="assets/img/screen-records.jpg" alt="Patient records screen" /></div></div>
+          <figcaption class="device__cap"><b>Records</b><span>Linked patient history</span></figcaption>
+        </figure>
+      </div>
+      <p style="margin-top:2.4rem" class="reveal"><a class="btn btn--ghost" href="screenshots.html">View all screenshots <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0" data-testid="cta">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="cta__in">
+          <span class="overline">Ready when you are</span>
+          <h2>Carry your vault. Everywhere.</h2>
+          <p class="lede">Free to try. No study ever leaves your device unencrypted.</p>
+          <div class="cta__btns">
+            <a class="btn btn--primary" href="support.html" data-testid="cta-primary">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="support.html" style="color:#fff;border-color:rgba(255,255,255,.3)">Talk to support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-testid="site-footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <a class="brand" href="index.html"><span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span><span>X-Ray<b>Vault</b></span></a>
+          <p>Secure radiography image storage, DICOM viewing and patient records — engineered for clinicians who carry the read in their pocket.</p>
+          <div class="footer__store">
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.2-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1-.04 1.5-.7 2.8-.7 1.3 0 1.7.7 2.8.7 1.2 0 1.9-1 2.6-2 .8-1.2 1.2-2.3 1.2-2.4-.03-.01-2.3-.9-2.3-3.5zM14.3 6.3c.6-.7 1-1.7.9-2.7-.9.04-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .08 2-.5 2.5-1.2z"/></svg> App Store</a>
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3.5v17a1 1 0 0 0 1.5.87l14-8.5a1 1 0 0 0 0-1.74l-14-8.5A1 1 0 0 0 4 3.5z"/></svg> Google Play</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Product</h4><a href="features.html">Features</a><a href="screenshots.html">Screenshots</a><a href="index.html#security">Security</a><a href="support.html">Get the app</a></div>
+        <div class="footer__col"><h4>Company</h4><a href="index.html#manifesto">Our approach</a><a href="support.html">Support</a><a href="support.html#faq">FAQ</a><a href="support.html">Contact</a></div>
+        <div class="footer__col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="privacy.html#data">Data handling</a><a href="privacy.html#rights">Your rights</a></div>
+      </div>
+      <div class="footer__bar">
+        <span>© 2026 X-Ray Vault. All rights reserved.</span>
+        <span>Not a diagnostic device. For reference and workflow use.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

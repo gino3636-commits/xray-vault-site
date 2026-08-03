@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — X-Ray Vault</title>
+  <meta name="description" content="Encrypted storage, native DICOM viewing, patient records, offline access and revocable secure sharing — the full X-Ray Vault feature set." />
+  <link rel="icon" href="assets/img/brand-mark.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+  <header class="nav" data-testid="site-header">
+    <a class="brand" href="index.html" data-testid="brand-logo">
+      <span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span>
+      <span>X-Ray<b>Vault</b></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="features.html" class="active">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="support.html" data-testid="nav-cta">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" data-testid="nav-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <section class="pagehead" data-testid="page-head">
+    <div class="pagehead__grid" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Features</p>
+      <h1>Everything between the scanner and the report.</h1>
+      <p class="lede">Five pillars that make X-Ray Vault feel like a diagnostic workstation you can slip into a coat pocket.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(20px,3vw,40px)" data-testid="feature-rows">
+    <div class="wrap">
+
+      <div class="frow reveal">
+        <div>
+          <span class="frow__no">01 — SECURITY</span>
+          <h2>End-to-end encryption</h2>
+          <p class="lede">Every study is sealed with 256-bit AES the instant it lands on your device. Encryption keys are derived on-device and never transmitted, so your reads remain genuinely private.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Zero-knowledge architecture</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Biometric unlock (Face / Touch ID)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Encrypted at rest and in transit</li>
+          </ul>
+        </div>
+        <div class="frow__media"><img src="assets/img/mri-suite.jpg" alt="Radiology imaging suite" /></div>
+      </div>
+
+      <div class="frow rev reveal">
+        <div>
+          <span class="frow__no">02 — VIEWING</span>
+          <h2>Native DICOM & X-ray viewer</h2>
+          <p class="lede">Open DICOM series and standard images at full fidelity. Window-level, pan, zoom and cine scroll behave exactly as clinicians expect — tuned for touch.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Multi-frame & series navigation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Distance, angle & ROI measurement</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Preset & custom window/level</li>
+          </ul>
+        </div>
+        <div class="frow__media"><img src="assets/img/tablet-scan.jpg" alt="Examining a scan on a tablet" /></div>
+      </div>
+
+      <div class="frow reveal">
+        <div>
+          <span class="frow__no">03 — RECORDS</span>
+          <h2>Structured patient records</h2>
+          <p class="lede">Attach studies to searchable patient histories with modality tags, referral notes and dates — so context is always one tap from the image.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Fast fuzzy search across records</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Modality & body-part tagging</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Chronological study timeline</li>
+          </ul>
+        </div>
+        <div class="frow__media"><img src="assets/img/hallway.jpg" alt="Modern hospital corridor" /></div>
+      </div>
+
+      <div class="frow rev reveal">
+        <div>
+          <span class="frow__no">04 — RESILIENCE</span>
+          <h2>Offline-first by design</h2>
+          <p class="lede">The full vault lives on the device, so a dropped signal never interrupts a read. Sync runs quietly in the background when you choose to connect.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Works with zero connectivity</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Conflict-safe background sync</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Encrypted local cache</li>
+          </ul>
+        </div>
+        <div class="frow__media"><img src="assets/img/xray-skull.jpg" alt="X-ray render in blue" /></div>
+      </div>
+
+      <div class="frow reveal">
+        <div>
+          <span class="frow__no">05 — SHARING</span>
+          <h2>Revocable secure sharing</h2>
+          <p class="lede">Share a study with a colleague through an encrypted, expiring link you control — and pull it back at any moment. No study is ever exposed in plain text.</p>
+          <ul class="tick">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Expiring, single-use links</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Instant revocation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Full access audit trail</li>
+          </ul>
+        </div>
+        <div class="frow__media"><img src="assets/img/tablet-point.jpg" alt="Pointing at an X-ray on a tablet" /></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" data-testid="cta">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="cta__in">
+          <span class="overline">See it in action</span>
+          <h2>Ready to carry your vault?</h2>
+          <p class="lede">Browse the interface, then get the app on your device.</p>
+          <div class="cta__btns">
+            <a class="btn btn--primary" href="screenshots.html">View screenshots <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="support.html" style="color:#fff;border-color:rgba(255,255,255,.3)">Get the app</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-testid="site-footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <a class="brand" href="index.html"><span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span><span>X-Ray<b>Vault</b></span></a>
+          <p>Secure radiography image storage, DICOM viewing and patient records — engineered for clinicians who carry the read in their pocket.</p>
+          <div class="footer__store">
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.2-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1-.04 1.5-.7 2.8-.7 1.3 0 1.7.7 2.8.7 1.2 0 1.9-1 2.6-2 .8-1.2 1.2-2.3 1.2-2.4-.03-.01-2.3-.9-2.3-3.5zM14.3 6.3c.6-.7 1-1.7.9-2.7-.9.04-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .08 2-.5 2.5-1.2z"/></svg> App Store</a>
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3.5v17a1 1 0 0 0 1.5.87l14-8.5a1 1 0 0 0 0-1.74l-14-8.5A1 1 0 0 0 4 3.5z"/></svg> Google Play</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Product</h4><a href="features.html">Features</a><a href="screenshots.html">Screenshots</a><a href="index.html#security">Security</a><a href="support.html">Get the app</a></div>
+        <div class="footer__col"><h4>Company</h4><a href="index.html#manifesto">Our approach</a><a href="support.html">Support</a><a href="support.html#faq">FAQ</a><a href="support.html">Contact</a></div>
+        <div class="footer__col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="privacy.html#data">Data handling</a><a href="privacy.html#rights">Your rights</a></div>
+      </div>
+      <div class="footer__bar">
+        <span>© 2026 X-Ray Vault. All rights reserved.</span>
+        <span>Not a diagnostic device. For reference and workflow use.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

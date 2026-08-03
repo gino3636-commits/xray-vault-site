@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screenshots — X-Ray Vault</title>
+  <meta name="description" content="A look inside X-Ray Vault: the encrypted vault library, the DICOM viewer and linked patient records." />
+  <link rel="icon" href="assets/img/brand-mark.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+  <header class="nav" data-testid="site-header">
+    <a class="brand" href="index.html" data-testid="brand-logo">
+      <span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span>
+      <span>X-Ray<b>Vault</b></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="screenshots.html" class="active">Screenshots</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="support.html" data-testid="nav-cta">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" data-testid="nav-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <section class="pagehead" data-testid="page-head">
+    <div class="pagehead__grid" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> / Screenshots</p>
+      <h1>A calm interface that disappears behind the image.</h1>
+      <p class="lede">Placeholder screens shown below — swap in your real X-Ray Vault captures anytime and they'll drop straight into these frames.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(10px,2vw,30px)" data-testid="screens-gallery">
+    <div class="wrap">
+      <div class="gallery">
+        <figure class="device reveal">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><img src="assets/img/screen-vault.jpg" alt="Vault list screen" /></div></div>
+          <figcaption class="device__cap"><b>Your Vault</b><span>Encrypted study library</span></figcaption>
+        </figure>
+        <figure class="device device--mid reveal" data-d="1">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><span class="scanline" aria-hidden="true"></span><img src="assets/img/screen-viewer.jpg" alt="Image viewer screen" /></div></div>
+          <figcaption class="device__cap"><b>Viewer</b><span>Window-level & measure</span></figcaption>
+        </figure>
+        <figure class="device reveal" data-d="2">
+          <span class="device__spot" aria-hidden="true"></span>
+          <div class="phone"><span class="phone__notch"></span><div class="phone__screen"><img src="assets/img/screen-records.jpg" alt="Patient records screen" /></div></div>
+          <figcaption class="device__cap"><b>Records</b><span>Linked patient history</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" data-testid="screens-detail">
+    <div class="wrap">
+      <div class="showrow reveal">
+        <div class="showrow__media"><img src="assets/img/tablet-scan.jpg" alt="Reviewing a scan on a tablet" /><span class="tag">Viewer · window-level</span></div>
+        <div>
+          <span class="overline">Screen 01</span>
+          <h2>The read, front and centre.</h2>
+          <p class="lede">A distraction-free canvas with gesture controls tucked into the edges — the image gets the pixels, the chrome gets out of the way.</p>
+        </div>
+      </div>
+
+      <div class="showrow rev reveal" style="margin-top:clamp(28px,5vw,72px)">
+        <div class="showrow__media"><img src="assets/img/tablet-point.jpg" alt="Discussing an X-ray on a tablet" /><span class="tag">Records · history</span></div>
+        <div>
+          <span class="overline">Screen 02</span>
+          <h2>Context, one tap away.</h2>
+          <p class="lede">Every study links back to a structured patient record — modality, body part, referral and prior studies, all searchable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" data-testid="cta">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="cta__in">
+          <span class="overline">Your captures, your frames</span>
+          <h2>Bring your own screenshots.</h2>
+          <p class="lede">Send us your APK or app screenshots and we'll place them in these device frames — pixel-perfect.</p>
+          <div class="cta__btns">
+            <a class="btn btn--primary" href="support.html">Get the app <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="features.html" style="color:#fff;border-color:rgba(255,255,255,.3)">Back to features</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-testid="site-footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <a class="brand" href="index.html"><span class="brand__mark"><img src="assets/img/brand-mark.png" alt="X-Ray Vault" /></span><span>X-Ray<b>Vault</b></span></a>
+          <p>Secure radiography image storage, DICOM viewing and patient records — engineered for clinicians who carry the read in their pocket.</p>
+          <div class="footer__store">
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.2-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1-.04 1.5-.7 2.8-.7 1.3 0 1.7.7 2.8.7 1.2 0 1.9-1 2.6-2 .8-1.2 1.2-2.3 1.2-2.4-.03-.01-2.3-.9-2.3-3.5zM14.3 6.3c.6-.7 1-1.7.9-2.7-.9.04-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .08 2-.5 2.5-1.2z"/></svg> App Store</a>
+            <a class="store" href="support.html"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3.5v17a1 1 0 0 0 1.5.87l14-8.5a1 1 0 0 0 0-1.74l-14-8.5A1 1 0 0 0 4 3.5z"/></svg> Google Play</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Product</h4><a href="features.html">Features</a><a href="screenshots.html">Screenshots</a><a href="index.html#security">Security</a><a href="support.html">Get the app</a></div>
+        <div class="footer__col"><h4>Company</h4><a href="index.html#manifesto">Our approach</a><a href="support.html">Support</a><a href="support.html#faq">FAQ</a><a href="support.html">Contact</a></div>
+        <div class="footer__col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="privacy.html#data">Data handling</a><a href="privacy.html#rights">Your rights</a></div>
+      </div>
+      <div class="footer__bar">
+        <span>© 2026 X-Ray Vault. All rights reserved.</span>
+        <span>Not a diagnostic device. For reference and workflow use.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

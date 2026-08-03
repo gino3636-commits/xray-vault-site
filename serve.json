@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "**/*.@(css|js|html|jpg|png|svg)",
+      "headers": [{ "key": "Cache-Control", "value": "no-store, max-age=0" }]
+    }
+  ]
+}
