@@ -28,6 +28,13 @@ Build a static marketing website (HTML/CSS/JS only, no backend) for the "X-Ray V
 - Removed contact form + Help Center / Privacy & Security nav items (kept static).
 - Homepage "On the floor" section: replaced tablet image with the "Department Protocols" phone screenshot (`assets/img/protocols-shot.jpg`) presented inside a subtle phone/device mockup frame (`.phone-mock`, `.showrow__media--phone` in styles.css). Frame aspect 4/5 to fit the ~0.85 ratio screenshot without side-cropping. Verified via isolated-section screenshot.
 
+## Recent changes (Jun 2026)
+- OR & Fluoro Guides section (screenshots.html): now uses the "OR Exam Guide" tile (`assets/img/or-exam-tile.jpg`), full-image `--tile` treatment.
+- License & CE section (screenshots.html): uses "License/Education" tile (`assets/img/license-ce-tile.jpg`), `--tile` treatment.
+- Homepage "On the floor": phone-frame removed; shows `protocols-shot.jpg` full via `--tall` treatment (clean border + shadow, no dark device frame).
+- Support email updated to xrayvaultsupport@gmail.com (support.html).
+- Lenis smooth-scroll now bundled locally at `assets/js/lenis.min.js`; all 5 pages reference it (removed unpkg CDN). Site is now 100% self-contained for GitHub Pages.
+
 ## Backlog / Future
 - P2: Optionally apply device-mockup treatment to other portrait screenshots for consistency.
 - P2: Add OpenGraph/social meta + favicon polish for sharing.
