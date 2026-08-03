@@ -35,13 +35,13 @@
 - Verified: all 5 pages + all images + css/js return 200; internal links valid
 
 ## Notes / status
+- **Corrected (2026-06-03, v2):** After the user shared 5 real in-app screenshots, discovered the app is a **radiographer's toolkit** (Technique & Positioning, OR & Fluoro Exam Guides, Department Protocols, Phone Directory, License/CE tracking, Share & Import) — NOT a DICOM image vault. Rewrote all copy across the 5 pages accordingly and dropped the 5 real screens into the device frames (`shot-home/or/fluoro/license/share.png`). Removed inaccurate encryption/DICOM/patient-record claims.
 - Contact form is VISUAL ONLY (no email send) per user choice — documented in `support.html` and README.
-- App screenshots are polished placeholders (AI-generated in-app-style) — user can drop real captures into `assets/img/`.
 
 ## Backlog
-- P1: Swap placeholder app screenshots for real device captures once provided
 - P2: Wire contact form to Formspree/Resend if user wants live submissions
-- P2: Optional dark variant for interior pages; add OG/social meta + sitemap
+- P2: Add OG/social share images + sitemap
+- P2: Wire App Store / Google Play buttons to real listings
 - P2: Real legal review of Privacy Policy copy
 
 ## Publish (GitHub Pages)

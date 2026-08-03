@@ -173,7 +173,7 @@ p{margin:0}
   background:#0b1220;padding:11px;box-shadow:var(--shadow-lift),0 0 0 1px rgba(11,59,96,.08);
   transform:rotate(-3deg)
 }
-.phone__notch{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:34%;height:22px;background:#0b1220;border-radius:0 0 14px 14px;z-index:3}
+.phone__notch{display:none}
 .phone__screen{position:relative;width:100%;height:100%;border-radius:32px;overflow:hidden;background:#fff}
 .phone__screen img{width:100%;height:100%;object-fit:cover}
 .scanline{position:absolute;left:0;right:0;height:120px;z-index:2;pointer-events:none;
