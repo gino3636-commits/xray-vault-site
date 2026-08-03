@@ -1,0 +1,42 @@
+{
+  "summary": "Verified the 'Technique & Positioning' feature card layout on the Home page. The technique-chart.jpg image is now rendered as a visible, opaque image occupying the top portion of the card, with the overline/heading/paragraph text stacked below it. No overlap, no bento-grid breakage, hero and footer render correctly, no page errors.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Home / feature-technique card", "issues": ["Image intrinsic ratio (1080x1881, portrait) makes the card very tall (~1369px) at 666px width; image alone occupies ~1158px. Consider adding a max-height (e.g., 520px) on .card--feature img with object-fit:cover to keep the bento grid more balanced. Not blocking — text is still fully legible beneath the image."]}
+    ]
+  },
+  "verification_details": {
+    "image_visible_at_top": true,
+    "image_opacity": "1",
+    "image_position_computed": "static",
+    "image_natural_size": "1080x1881",
+    "image_rendered_rect": {"width": 666, "height": 1158},
+    "text_block_rect_top": 958,
+    "image_rect_bottom": 932,
+    "overlap": false,
+    "overline_text": "The core",
+    "heading_text": "Technique & Positioning",
+    "paragraph_present": true,
+    "hero_visible": true,
+    "footer_visible": true,
+    "page_errors": [],
+    "console_errors": ["net::ERR_FAILED (from intentional lenis route abort during testing — not a real site error)"]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Optional: cap .card--feature img height (e.g., max-height: 520px) to keep the bento grid visually balanced — the portrait chart currently makes the card significantly taller than its neighbours."
+  ],
+  "critical_code_review_comments": [
+    "Layout requirement fully met: image on top, text below, no overlap, no watermark.",
+    "Consider constraining image height to preserve bento grid proportion on desktop."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Static site tested via REACT_APP_BACKEND_URL. Lenis CDN must be route-aborted ('**/lenis*') for programmatic scroll to work. Feature card at [data-testid='feature-technique'] now has an <img> above a .in text block; verified via computed styles and card screenshot."
+}
