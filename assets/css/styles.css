@@ -299,6 +299,10 @@ p{margin:0}
 .phone-mock__notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:34%;height:18px;background:#0F172A;border-radius:0 0 14px 14px;z-index:2}
 .phone-mock img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:28px;display:block}
 @media(max-width:760px){.showrow__media--phone{padding:8px 0}.phone-mock{width:min(260px,70%)}}
+/* Full-image tall screenshot (no crop) */
+.showrow__media--tall{aspect-ratio:auto;overflow:visible;border:0;box-shadow:none;background:radial-gradient(120% 90% at 50% 0%,rgba(24,119,184,.10),transparent 70%);display:flex;justify-content:center;align-items:flex-start;padding:8px 0}
+.showrow__media--tall img{width:auto;max-width:88%;max-height:620px;height:auto;object-fit:contain;border-radius:26px;border:1px solid var(--line);box-shadow:var(--shadow-lift)}
+.showrow__media--tall .tag{left:50%;transform:translateX(-50%)}
 .tick{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:.7rem}
 .tick li{display:flex;gap:.7rem;align-items:flex-start;color:var(--muted)}
 .tick svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:2px}
