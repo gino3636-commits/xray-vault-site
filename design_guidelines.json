@@ -1,0 +1,107 @@
+{
+  "theme": "light",
+  "typography": {
+    "font_families": {
+      "heading": "'Cabinet Grotesk', sans-serif",
+      "body": "'IBM Plex Sans', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl+ tracking-tighter leading-none font-medium",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight font-medium",
+      "h3": "text-2xl md:text-3xl tracking-tight leading-snug font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-slate-600",
+      "overline": "text-xs uppercase tracking-[0.2em] font-semibold text-blue-600"
+    },
+    "guidelines": "Do not use Inter, Roboto, or Space Grotesk. Load 'Cabinet Grotesk' via Fontshare CDN and 'IBM Plex Sans' via Google Fonts. Keep headings sharp and clinical."
+  },
+  "colors": {
+    "palette": {
+      "primary": "#0B3B60",
+      "primary_light": "#1A5276",
+      "accent": "#0066FF",
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "text_main": "#0F172A",
+      "text_muted": "#475569",
+      "border": "#E2E8F0"
+    },
+    "guidelines": "Clinical whites and medical blues. Use #0B3B60 for strong contrast areas and #0066FF for interactive accents (buttons, links). No generic full-screen gradients. Use pure white surfaces with 1px slate-200 borders."
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] -translate-y-1 transition-transform transition-shadow duration-300"
+    },
+    "surfaces": {
+      "glass": "bg-white/80 backdrop-blur-xl border-b border-slate-200/50",
+      "card": "bg-white border border-slate-200 rounded-2xl"
+    },
+    "guidelines": "Avoid transparent backgrounds for headers/dropdowns. Use glassmorphism (white/80 + blur) for sticky headers."
+  },
+  "grids_and_layouts": {
+    "spacing_scale": "Use generous padding: p-12, p-16, p-24 for sections. Components need internal padding (p-8).",
+    "bento_grid": "For features: grid-cols-1 md:grid-cols-3 gap-6. Mix spans: col-span-2 row-span-2 for hero feature, col-span-1 for stats.",
+    "page_blueprints": {
+      "home": "Hero (text reveal) -> Marquee -> Bento Features Grid -> Manifesto -> CTA",
+      "features": "Deep dive feature rows with alternating text/image layout, high padding.",
+      "screenshots": "Gallery grid of mobile device mockups (use CSS frames) containing placeholder screenshots.",
+      "privacy": "Max-width text container (max-w-3xl), rich typography, big serif or crisp sans numbers.",
+      "support": "Visual contact form (grid-cols-2) and FAQ accordion (using native <details> and <summary> or vanilla JS)."
+    }
+  },
+  "motion": {
+    "kinetic_hero": "Line-by-line mask reveal on load using CSS animations (transform translateY, opacity) or vanilla JS IntersectionObserver.",
+    "scroll_reveals": "Use IntersectionObserver to toggle an '.is-visible' class that translates Y from 20px to 0 and fades opacity from 0 to 1.",
+    "marquee": "Slow CSS keyframe animation for continuous horizontal scroll of editorial text.",
+    "smooth_scroll": "Include Lenis smooth scroll via CDN (`<script src=\"https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js\"></script>`)."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1758691462519-99076ad0d485?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxkb2N0b3IlMjBsb29raW5nJTIwYXQlMjB0YWJsZXQlMjBob3NwaXRhbHxlbnwwfHx8fDE3ODU3MTUyMDd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "hero_or_feature",
+        "description": "Doctor showing scan to patient on tablet"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1666214280352-db292c05fd80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHx4LXJheSUyMHNjYW4lMjBtZWRpY2FsfGVufDB8fHx8MTc4NTcxNTIwN3ww&ixlib=rb-4.1.0&q=85",
+        "category": "infrastructure",
+        "description": "MRI machine / Radiology suite"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1719934398679-d764c1410770?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxob3NwaXRhbCUyMGNsaW5pYyUyMG1vZGVybiUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3ODU3MTUyMDd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "environment",
+        "description": "Modern hospital hallway"
+      }
+    ],
+    "app_screenshots": "Use pure CSS mobile frames or stylized div boxes with a dark placeholder background and centered icon for the 'mobile app screenshots later' requirement. DO NOT leave them completely blank, add an icon or a placeholder medical graphic."
+  },
+  "accessibility": {
+    "guidelines": "Ensure high contrast (APCA). Provide aria-labels for buttons and interactive elements. Use semantic HTML5 elements.",
+    "testing": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"hero-cta-button\"`)."
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: Do NOT use React, Vue, or any build step. Create pure HTML files (`index.html`, `features.html`, `screenshots.html`, `privacy.html`, `support.html`) in the `/app` root.",
+    "Use Tailwind CSS via CDN: `<script src=\"https://cdn.tailwindcss.com\"></script>` and configure the theme inside `<script>tailwind.config = { theme: { extend: { colors: { primary: '#0B3B60', accent: '#0066FF' }, fontFamily: { sans: ['IBM Plex Sans', 'sans-serif'], display: ['Cabinet Grotesk', 'sans-serif'] } } } }</script>`.",
+    "Use Phosphor icons via CDN (`<script src=\"https://unpkg.com/@phosphor-icons/web\"></script>`) or FontAwesome.",
+    "Create a separate `styles.css` for custom keyframes (marquee, reveals) and `script.js` for IntersectionObserver and Lenis setup. Link them in all HTML files.",
+    "Ensure the header is present on all pages and is sticky using `fixed top-0 w-full z-50` with glassmorphism.",
+    "For the screenshots placeholder, use `div` elements styled like mobile phones (rounded-3xl border-8 border-slate-800 aspect-[9/19] bg-slate-900 flex items-center justify-center).",
+    "Keep Javascript entirely vanilla in `script.js`. Do not attempt to use JSX.",
+    "Ensure strict HTML5 structure."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN."
+  ]
+}
