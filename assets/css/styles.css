@@ -292,7 +292,13 @@ p{margin:0}
 .showrow.rev{direction:rtl}.showrow.rev>*{direction:ltr}
 .showrow__media{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-soft);aspect-ratio:4/3}
 .showrow__media img{width:100%;height:100%;object-fit:cover}
-.showrow__media .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-radius:999px;padding:.4rem .9rem;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary)}
+.showrow__media .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-radius:999px;padding:.4rem .9rem;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);z-index:3}
+/* Phone mockup variant */
+.showrow__media--phone{aspect-ratio:auto;overflow:visible;border:0;box-shadow:none;background:radial-gradient(120% 90% at 50% 0%,rgba(24,119,184,.10),transparent 70%);display:flex;align-items:center;justify-content:center;padding:24px 0}
+.phone-mock{position:relative;width:min(330px,80%);aspect-ratio:4/5;background:#0F172A;border-radius:38px;padding:10px;box-shadow:0 26px 60px rgba(11,59,96,.24),inset 0 0 0 2px rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+.phone-mock__notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:34%;height:18px;background:#0F172A;border-radius:0 0 14px 14px;z-index:2}
+.phone-mock img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:28px;display:block}
+@media(max-width:760px){.showrow__media--phone{padding:8px 0}.phone-mock{width:min(260px,70%)}}
 .tick{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:.7rem}
 .tick li{display:flex;gap:.7rem;align-items:flex-start;color:var(--muted)}
 .tick svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:2px}
