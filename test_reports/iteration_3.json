@@ -1,0 +1,25 @@
+{
+  "summary": "Verified nav active-dot fix on static X-Ray Vault site. Mobile hamburger menu on features.html and screenshots.html no longer shows the stray blue dot (::after display:none via @media max-width:920px rule at styles.css:135). Desktop (1440x800) still shows the 5x5 blue dot under the active link. Mobile menu open/close via nav-toggle works; all 5 links visible.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Static HTML site; use REACT_APP_BACKEND_URL + /<page>.html. Nav fix verified — active-link ::after is hidden below 920px viewport, visible on desktop. Mobile screenshots show clean menu overlay with no floating dot.",
+  "verification_details": {
+    "mobile_features_active_after": {"display": "none", "width": "5px", "height": "5px"},
+    "mobile_screenshots_active_after": {"display": "none"},
+    "desktop_features_active_after": {"display": "block", "background": "rgb(24, 119, 184)", "width": "5px", "height": "5px"},
+    "mobile_links_visible": 5,
+    "toggle_open_close": "OK"
+  }
+}

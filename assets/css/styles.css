@@ -132,6 +132,7 @@ p{margin:0}
   }
   .nav.open .nav__links{opacity:1;transform:none;pointer-events:auto}
   .nav__links a{padding:.8rem 1rem;font-size:1rem}
+  .nav__links a.active::after{display:none}
   .nav__toggle{display:grid;place-items:center}
   .nav__actions .btn{display:none}
 }
