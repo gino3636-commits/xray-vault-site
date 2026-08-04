@@ -35,6 +35,18 @@ Build a static marketing website (HTML/CSS/JS only, no backend) for the "X-Ray V
 - Support email updated to xrayvaultsupport@gmail.com (support.html).
 - Lenis smooth-scroll now bundled locally at `assets/js/lenis.min.js`; all 5 pages reference it (removed unpkg CDN). Site is now 100% self-contained for GitHub Pages.
 
+## Recent changes (Jun 2026)
+- Features page image swaps to real app screenshots (all shown in full via `--full`/`--duo`/`--tile` contain treatments, no cropping):
+  - 01 Technique & Positioning: `technique-positioning.webp`
+  - 02 OR & Fluoro Exam Guides: duo `guide-lithotripsy.webp` + `guide-cystogram.webp`
+  - 03 Department Protocols & Directory: duo `protocols-list.webp` + `directory-list.jpg`
+  - 04 License & CE: `license-ce-screen.jpg`
+  - 05 Share & Import: duo `export-qr-menu.webp` + `export-qr-code.webp`
+- Screenshots page: OR guides `--tile` (`or-exam-tile.jpg`), License `--tile` (`license-ce-tile.jpg`).
+- Homepage "On the floor": `protocols-shot.jpg` via `--tall` (phone frame removed).
+- Support email: xrayvaultsupport@gmail.com.
+- Lenis bundled locally at `assets/js/lenis.min.js` (no CDN). Site is 100% self-contained for GitHub Pages.
+
 ## Backlog / Future
 - P2: Optionally apply device-mockup treatment to other portrait screenshots for consistency.
 - P2: Add OpenGraph/social meta + favicon polish for sharing.
