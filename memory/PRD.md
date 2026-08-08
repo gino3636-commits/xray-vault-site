@@ -47,6 +47,11 @@ Build a static marketing website (HTML/CSS/JS only, no backend) for the "X-Ray V
 - Support email: xrayvaultsupport@gmail.com.
 - Lenis bundled locally at `assets/js/lenis.min.js` (no CDN). Site is 100% self-contained for GitHub Pages.
 
+## Site structure (updated Jun 2026)
+- 3 pages only: `index.html` (Home), `privacy.html`, `support.html`.
+- Former Features & Screenshots pages were merged into Home as in-page sections: `#features` (5 feature rows, data-testid=feature-rows) and `#screenshots` (7-phone gallery, data-testid=screens-gallery). `features.html` and `screenshots.html` deleted.
+- Nav (all pages): Home, Features, Screenshots, Privacy, Support. On Home, Features/Screenshots are in-page anchors (#features/#screenshots); on Privacy/Support they point to index.html#features / index.html#screenshots. Verified via testing_agent iteration_4 (100% pass).
+
 ## Backlog / Future
 - P2: Optionally apply device-mockup treatment to other portrait screenshots for consistency.
 - P2: Add OpenGraph/social meta + favicon polish for sharing.
