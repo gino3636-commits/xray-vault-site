@@ -52,6 +52,13 @@ Build a static marketing website (HTML/CSS/JS only, no backend) for the "X-Ray V
 - Former Features & Screenshots pages were merged into Home as in-page sections: `#features` (5 feature rows, data-testid=feature-rows) and `#screenshots` (7-phone gallery, data-testid=screens-gallery). `features.html` and `screenshots.html` deleted.
 - Nav (all pages): Home, Features, Screenshots, Privacy, Support. On Home, Features/Screenshots are in-page anchors (#features/#screenshots); on Privacy/Support they point to index.html#features / index.html#screenshots. Verified via testing_agent iteration_4 (100% pass).
 
+## Guideline 3.2 (Business) compliance rewrite (Jun 2026)
+- App Store rejected the iOS app under 3.2 (looked like an internal tool for a specific org). NOTE: the mobile app source is NOT in this workspace — only the marketing website. Website was updated for consistency with a PUBLIC / personal-use positioning.
+- Removed ALL "Get the app" CTAs (nav, hero, bottom CTA) and both App Store / Google Play store badges from every footer across index/privacy/support.
+- Reworded org/employer framing to individual self-managed use: hero "your own radiography reference"; Features 03 label "YOUR NOTES" / heading "Protocols & Contacts You Build" (bullets: "Save your own protocol notes", "Build your own contacts list"); "On the floor" -> "Built for the floor, not the reading room."; Features intro "set up and managed entirely by you"; meta description updated; privacy contact points to Support page (no App Store reference).
+- Kept: app feature/screen names (e.g. "Department Protocols" in marquee/alt/captions) and the Support FAQ safety disclaimer.
+- Verified via testing_agent iteration_5 (100% frontend pass, 0 issues).
+
 ## Backlog / Future
 - P2: Optionally apply device-mockup treatment to other portrait screenshots for consistency.
 - P2: Add OpenGraph/social meta + favicon polish for sharing.
